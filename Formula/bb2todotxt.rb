@@ -5,20 +5,20 @@
 class Bb2todotxt < Formula
   desc "Converts pull request tasks from bitbucket to todo txt tasks"
   homepage "https://github.com/scottmmjackson/bb2todotxt"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/scottmmjackson/bb2todotxt/releases/download/v0.0.3/bb2todotxt_Darwin_x86_64.tar.gz"
-      sha256 "0747212a3efb09cc6991f5343b625c383b0265036a1e54650090282b7cb78461"
+      url "https://github.com/scottmmjackson/bb2todotxt/releases/download/v0.0.4/bb2todotxt_Darwin_x86_64.tar.gz"
+      sha256 "460911be747229074b97c17daff0084452729e12f87de0d626367cb2ff57f15f"
 
       def install
         bin.install "bb2todotxt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/scottmmjackson/bb2todotxt/releases/download/v0.0.3/bb2todotxt_Darwin_arm64.tar.gz"
-      sha256 "fcdd5fe5e3a0b91c8d7a39f3b91b515e839ed56ca6948c993a1e7423b8f40af3"
+      url "https://github.com/scottmmjackson/bb2todotxt/releases/download/v0.0.4/bb2todotxt_Darwin_arm64.tar.gz"
+      sha256 "66c9dac408d7c3c20ee089615ff713ba37151023fc90f93b39bd9310f786b03c"
 
       def install
         bin.install "bb2todotxt"
@@ -28,16 +28,16 @@ class Bb2todotxt < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scottmmjackson/bb2todotxt/releases/download/v0.0.3/bb2todotxt_Linux_arm64.tar.gz"
-      sha256 "c898ded37d257fb5eb7a628fef8ccbb5f948b654f4ea3905e58a13f900bf74da"
+      url "https://github.com/scottmmjackson/bb2todotxt/releases/download/v0.0.4/bb2todotxt_Linux_arm64.tar.gz"
+      sha256 "169d4d255dcdc1570c75b4d6b3715bc9be84305fdaf21eed5b66ebc7a3dae25d"
 
       def install
         bin.install "bb2todotxt"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/scottmmjackson/bb2todotxt/releases/download/v0.0.3/bb2todotxt_Linux_x86_64.tar.gz"
-      sha256 "f67482a6b0400d200de545c8ae51ae38e88aa33148b3238afdbcb34651623e8d"
+      url "https://github.com/scottmmjackson/bb2todotxt/releases/download/v0.0.4/bb2todotxt_Linux_x86_64.tar.gz"
+      sha256 "d8ae93c80095a4c7bc54be954c6933712d04accc4f950f2f1e92e77b83915037"
 
       def install
         bin.install "bb2todotxt"
