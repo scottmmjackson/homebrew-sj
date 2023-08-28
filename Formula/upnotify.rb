@@ -15,7 +15,7 @@ class Upnotify < Formula
         bin.install "upnotify"
       end
     end
-    if Hardware::CPU.intel?
+    if Hardware::CPU.arm?
       url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.0/upnotify-0.1.0-aarch64-apple-darwin.tar.gz"
       sha256 "0fbc79c385d1dbae8b4b1e97245d719e86fd2533de2113cdbcad0d7ca44864fe"
 
