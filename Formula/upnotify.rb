@@ -4,20 +4,20 @@
 class Upnotify < Formula
   desc "Tool to log to standard out when the status of a web service changes."
   homepage "https://github.com/scottmmjackson/upnotify"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.0/upnotify-0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "5ddd5ebcb131425c72ecdc4dfbe025bb8da6c11174f00f95797e2f2e19559db7"
+      url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.1/upnotify-0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "ca1f5d172fba9095ada9ec21d83a8653e200ce665640b7ab4974ba7b699342af"
 
       def install
         bin.install "upnotify"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.0/upnotify-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5d72732f7c9cb626d8ca218b29083c87616152fe3078b169c78dc9327c94868c"
+      url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.1/upnotify-0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "9b8b4a8d1aa6b470d6391e08447bd2e0547e7948db0b5d76ec8c1b1ff942a043"
 
       def install
         bin.install "upnotify"
@@ -26,16 +26,16 @@ class Upnotify < Formula
   end
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.0/upnotify-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f770698700d96635e623f7778d8d698d52b8808f2838c14887f5dcfd7acf9ea0"
+      url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.1/upnotify-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6c0c138d2976e49524f9f8247a6809256746168323b1badf850594f2dcbb83b1"
 
       def install
         bin.install "upnotify"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.0/upnotify-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "efef38903f30e080aad6d3348cfce716eb291d666a0b0b3c88ed269a5db73ff6"
+      url "https://github.com/scottmmjackson/upnotify/releases/download/0.1.1/upnotify-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1faee699a8b5216722ce60989ca3b2590ad577e0b04f2aa2bc28be484b066a2a"
 
       def install
         bin.install "upnotify"
