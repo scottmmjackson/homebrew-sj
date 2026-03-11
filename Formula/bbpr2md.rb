@@ -8,7 +8,7 @@ class Bbpr2md < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url ""
+      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.2/bbpr2md-0.1.2-x86_64-apple-darwin.tar.gz"
       sha256 "6ef59c61d5a21ac6829aa7d5c7b2147400ede40172ad3007bf0f323edf6be572"
 
       def install
@@ -16,7 +16,7 @@ class Bbpr2md < Formula
       end
     end
     if Hardware::CPU.arm?
-      url ""
+      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.2/bbpr2md-0.1.2-aarch64-apple-darwin.tar.gz"
       sha256 "3c8c82b0a71f50a4d2967b8e9762e4d1fc4b773eb2d6b00f1b5b38d03b9c7c76"
 
       def install
@@ -26,7 +26,7 @@ class Bbpr2md < Formula
   end
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url ""
+      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.2/bbpr2md-0.1.2-aarch64-unknown-linux-gnu.tar.gz"
       sha256 "961f4fdd9cac51a8bec0ac8e26f9148c0cd220cce1b501187efcf4f6a6b01da6"
 
       def install
@@ -34,7 +34,7 @@ class Bbpr2md < Formula
       end
     end
     if Hardware::CPU.intel?
-      url ""
+      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.2/bbpr2md-0.1.2-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "5cef96713c45738d48f6c5771420bd6e218fc7d1c5eda78d530b63d537382516"
 
       def install
