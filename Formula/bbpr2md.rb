@@ -4,20 +4,20 @@
 class Bbpr2md < Formula
   desc "Bitbucket Pull Request to Markdown CLI tool."
   homepage "https://github.com/scottmmjackson/bbpr2md"
-  version "0.1.5"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.5/bbpr2md-0.1.5-x86_64-apple-darwin.tar.gz"
-      sha256 "54b40e683bbb5146aa2f3ccf4479b0e8b9103cac124d1dca016b9b8fec9478cb"
+      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.7/bbpr2md-0.1.7-x86_64-apple-darwin.tar.gz"
+      sha256 "e604c032ef7d5b456c4a0f62c80a92abc43d090877b6b9056f5acea05fbac45f"
 
       def install
         bin.install "bbpr2md"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.5/bbpr2md-0.1.5-aarch64-apple-darwin.tar.gz"
-      sha256 "94909be667f40cc36e68eb3d70b931b0a87d441d83332e39c0e64146201dcec4"
+      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.7/bbpr2md-0.1.7-aarch64-apple-darwin.tar.gz"
+      sha256 "f996553743fb5d94a0aae2a15bf716b6020dcce4e035a778f727ff31f1d0bef3"
 
       def install
         bin.install "bbpr2md"
@@ -26,16 +26,16 @@ class Bbpr2md < Formula
   end
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.5/bbpr2md-0.1.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0c5680d27f4e96d9e3047e6ebe16b8a6162abb5de13f3c9daddc3d2a6abdf52f"
+      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.7/bbpr2md-0.1.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5b794ac2019c0be85074200a072e915c0e69a3cb3c88b04d8849285e6943c6fb"
 
       def install
         bin.install "bbpr2md"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.5/bbpr2md-0.1.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f112bc71c3b97342fba509d06ac82887694c2d7abfc7551988be6bdd0fc2cbd6"
+      url "https://github.com/scottmmjackson/bbpr2md/releases/download/0.1.7/bbpr2md-0.1.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1f716f37a65506ec15faa5a15187e4efe58d5c5be75c78dbaf68d1b1a24d315b"
 
       def install
         bin.install "bbpr2md"
