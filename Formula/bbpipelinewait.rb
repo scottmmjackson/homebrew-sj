@@ -4,41 +4,45 @@
 class Bbpipelinewait < Formula
   desc "Tool to log to standard out when the status of a web service changes."
   homepage "https://github.com/scottmmjackson/bbpipelinewait"
-  version "1.0.10"
+  version "1.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/scottmmjackson/bbpipelinewait/releases/download/1.0.10/bbpipelinewait-1.0.10-x86_64-apple-darwin.tar.gz"
-      sha256 "baa8e7c10d35b746c54b259f97b0e45d42a44e0582c8bb1b35dc8442ad6af073"
+      url "https://github.com/scottmmjackson/bbpipelinewait/releases/download/1.0.12/bbpipelinewait-1.0.12-x86_64-apple-darwin.tar.gz"
+      sha256 "30c0f69cab10c9f12e606d2726680569b9cb113267d5d165e9e7b6511da7dae7"
 
       def install
         bin.install "bbpipelinewait"
+        bin.install "bbpw-ui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/scottmmjackson/bbpipelinewait/releases/download/1.0.10/bbpipelinewait-1.0.10-aarch64-apple-darwin.tar.gz"
-      sha256 "19df5a88e21b208f6c1aff75f6f9fbbc92876a1284a7ab89a1d7d84b0d2f9b4d"
+      url "https://github.com/scottmmjackson/bbpipelinewait/releases/download/1.0.12/bbpipelinewait-1.0.12-aarch64-apple-darwin.tar.gz"
+      sha256 "a2f67a5318575242d2622ec8c6cf3b1efa71e975f7f87f709c8da10c95200474"
 
       def install
         bin.install "bbpipelinewait"
+        bin.install "bbpw-ui"
       end
     end
   end
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scottmmjackson/bbpipelinewait/releases/download/1.0.10/bbpipelinewait-1.0.10-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "932a3d70c1512dc87e34ac035f1959b811f5955c889c8def7100f26f298a3a0e"
+      url "https://github.com/scottmmjackson/bbpipelinewait/releases/download/1.0.12/bbpipelinewait-1.0.12-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8f167626d2e59d489e130b7985db795c91d3c5b37abb9353599932b99e9cf8e5"
 
       def install
         bin.install "bbpipelinewait"
+        bin.install "bbpw-ui"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/scottmmjackson/bbpipelinewait/releases/download/1.0.10/bbpipelinewait-1.0.10-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "583aadb68d67cdd5e9b22f8f454cccd5dcd2f09ea91f96a2fe1535be235090ff"
+      url "https://github.com/scottmmjackson/bbpipelinewait/releases/download/1.0.12/bbpipelinewait-1.0.12-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e0a04dd570a9c307cacf71885e0865fd18ca52a66d20993845fd73b42afc9f8a"
 
       def install
         bin.install "bbpipelinewait"
+        bin.install "bbpw-ui"
       end
     end
   end
